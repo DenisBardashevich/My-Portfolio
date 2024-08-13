@@ -1,0 +1,124 @@
+.welcom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcom_i {
+    margin: 150px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width:1200px) {
+        margin: 60px 0;
+        
+    }
+}
+
+.welcom_portfolio {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+
+    @media (max-width:1200px) {
+        font-size: 20px;
+        
+    }
+    @media (max-width:768px) {
+        font-size: 16px;
+        
+    }
+}
+
+.welcom_name {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 700;
+    transition: 1.5s ease;
+
+    @media (max-width:768px) {
+        font-size: 25px;
+        
+    }
+}
+
+.welcom_about {
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: 400;
+
+    @media (max-width:1200px) {
+        max-width: 400px;
+        font-size: 18px;
+        
+    }
+}
+
+.welcom_img {
+    position: absolute;
+    right: 10%;
+    margin-top: 100px;
+
+
+    @media (max-width:900px) {
+        .img_notebook{
+            width: 250px;
+            height: auto;
+        }
+        
+    }
+    @media (max-width:768px) {
+        .img_notebook{
+            width: 150px;
+            height: auto;
+        }
+        
+    }
+
+
+
+}
+
+.img_notebook {
+    height: 350px;
+    width: auto;
+
+    @media (max-width:1200px) {
+        height: 250px;
+        
+    }
+
+    @media (max-width:768px) {
+        display: none;
+        
+    }
+}
+
+.name_color{
+    transition: color 1s ease;
+    font-size: 47px;
+
+    @media (max-width:1200px) {
+        font-size: 35px;
+        
+    }
+
+    @media (max-width:768px) {
+        font-size: 25px;
+        height: 50px;
+        
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-3px, 0); }
+    50% { transform: translate(3px, 0); }
+    75% { transform: translate(-3px, 0); }
+    100% { transform: translate(0); }
+}
+
+.shake {
+    animation: shake 0.3s ;
+}

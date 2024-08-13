@@ -1,0 +1,72 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    overflow: hidden;
+    
+}
+
+.header_people {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: 0px;
+}
+.header_name {
+    color: rgb(26, 26, 26);
+
+}
+
+.header_social {
+    display: block; 
+}
+
+
+@media (max-width: 768px) {
+    .header_social {
+        display: none;
+    }
+}
+
+
+.header_social ul {
+    display: flex;
+    column-gap: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+
+    li {
+        list-style-type: none;
+
+    }
+    a {
+        color: black;
+        position: relative;
+    }
+    a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+        background-color: black;
+    }
+}
+
+.nav_btn{
+     background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
